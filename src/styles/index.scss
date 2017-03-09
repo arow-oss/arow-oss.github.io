@@ -63,8 +63,6 @@ a {
   position: relative;
   overflow-y: hidden;
   min-height: calc(100vh - #{$header-size} + 8em);
-  display: flex;
-  flex-wrap: wrap;
 
   .top_background {
     @include shaded-area;
@@ -140,11 +138,12 @@ a {
     width: 100%;
 
     @media (min-width: $tablet-size) {
+      position: absolute;
       text-align: left;
       margin-left: -16em;
       min-width: 14em;
       padding: 0;
-      width: calc(100vw - #{$main-width} + 16em);
+      width: calc(100vw - #{$main-width} + 14em);
     }
 
     * {
