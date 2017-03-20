@@ -2,7 +2,6 @@ const path              = require('path');
 const webpack           = require('webpack');
 const merge             = require('webpack-merge');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const autoprefixer      = require('autoprefixer');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
@@ -82,7 +81,7 @@ const commonConfig = {
 
   postcss: () => [
     require('stylelint'),
-    autoprefixer({ browsers: ['last 2 versions'] }),
+    require('autoprefixer'),
     require('postcss-flexbugs-fixes'),
     require('postcss-reporter')({ clearMessages: true }),
   ],
