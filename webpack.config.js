@@ -12,6 +12,9 @@ const TARGET_ENV = process.env.npm_lifecycle_event === 'build' ? 'production' : 
 const ENV = {
   'port': process.env.PORT || 8080,
   'host': process.env.HOST || 'localhost',
+  'description': `
+世間の自称IT企業って9割くらいは うんこ ですよね。新しいことを学べない、前頭葉が腐ったおっさん達が、はした金を稼ぐためだけに、うんこみたいなシステムを開発してくれます。そんな、うんこみたいな自称IT企業にお困りの方は弊社にご相談ください。逆に、うんこでもできるような仕事は、うんこみたいな金額でうんこみたいな企業を買い叩いて、彼らを早く世界から根絶しましょう！いい条件であれば、弊社のクッソ優秀な社員や社長の引き抜きも歓迎なので、お気軽にどうぞ！
+  `,
 };
 
 // Common webpack config
