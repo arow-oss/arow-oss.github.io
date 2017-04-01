@@ -29,6 +29,10 @@ a {
   color: $font-accent-color;
 }
 
+ul {
+  margin: 0.5em 0 0.5em 0;
+}
+
 @media (min-width: $sp-size) {
   body {
     font-size: calc(0.5vw + 13px);
