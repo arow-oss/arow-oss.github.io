@@ -144,6 +144,7 @@ ul {
     p {
       color: $font-accent-color;
       font-weight: bold;
+      text-shadow: white 1px 1px 0, white -1px 1px 0, white 1px -1px 0, white -1px -1px 0;
     }
   }
 
