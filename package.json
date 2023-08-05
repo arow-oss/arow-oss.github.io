@@ -10,7 +10,7 @@
   },
   "scripts": {
     "start": "parcel serve src/index.html --https --public-url / -p 8008",
-    "build": "rimraf dist/ && parcel build src/index.html src/index-en.html --no-source-maps --dist-dir dist/ --public-url /"
+    "build": "rimraf dist/ && parcel build src/index.html src/index-en.html --no-source-maps --dist-dir dist/ --public-url / && cp -r src/posts dist/ && cp src/CNAME dist/"
   },
   "dependencies": {
     "autoprefixer": "^10.4.7",
